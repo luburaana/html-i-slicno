@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabele</title>
+</head>
+
+<header
+    style="background-color:#f28ab2; padding:40px 25px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:1000;">
+    <div style="color:white; font-weight:bold;font-size:37px">Linijski CSS</div>
+    <nav>
+        <a href="ne_diraj.html" id="ovo"
+            style="color:white; text-decoration:none; margin:0 10px; font-weight:bold; font-size:28px;">ovo</a>
+        <a href="ne_diraj.html" id="se"
+            style="color:white; text-decoration:none; margin:0 10px; font-weight:bold;font-size:28px;">se</a>
+        <a href="ne_diraj.html" id="ne-dira"
+            style="color:white; text-decoration:none; margin:0 10px; font-weight:bold;font-size:28px;">ne dira</a>
+    </nav>
+</header>
+
+<body style="background-color:#f2dada; margin-left: 125px; margin-right: 150px;">
+
+    <p style="text-align: left; font-size:35px; font-family:'Trebuchet MS'">
+        *Kao što već znamo, linijski CSS predstavlja samo stilski dodatak HTML jeziku. To nam govori da je sintaksa za
+        tabelu nepromijenjena u odnosu na HTML. Jedino što se mijenja jeste kako mi tu tabelu stilizujemo.
+    </p>
+
+    <p style="text-align: left; font-size: 35px; font-family:'Trebuchet MS'">
+        *Prvo ćemo se podsjetiti sintakse za ubacivanje klasične 2x2 tabele u našu stranicu.
+    </p>
+    <center>
+        <img src="takvikaoja.png" width="450" height="400" alt="Takvikaoja">
+    </center>
+
+    <p style="text-align: left; font-size: 30px; font-family:'Trebuchet MS'">
+        *Sada (stavku po stavku) da se podsjetimo šta koji od ovih tagova označava:
+    </p>
+
+    <div style="text-decoration: underline;">
+        <ul style="font-size: 25px;">
+            <li><b>Table border</b> - daje vizualnu strukturu tabeli, debljine 1, suštinski je odvaja od pozadine i
+                razgraničava</li>
+            <li><b>tr</b> tag - tr je skraćeno za table row, ubacujemo red u tabeli</li>
+            <li><b>td</b> tag - td je skraćeno za table data, u suštini samo oznaka za ćeliju</li>
+        </ul>
+    </div>
+
+    <p style="text-align: left; font-size: 35px; font-family:'Trebuchet MS'">
+        *Ta naša tabela bi izgledala ovako:
+    </p>
+
+    <table border="1" height="500" width="450">
+        <tr>
+            <td>nesto nesto nesto</td>
+            <td>nesto nesto nesto v2</td>
+        </tr>
+        <tr>
+            <td>nista nista nista</td>
+            <td>nista nista nista v2</td>
+        </tr>
+    </table>
+    <p style="text-align: left; font-size: 30px; font-family:'Trebuchet MS'">
+        *Ovdje dolazimo do dijela gdje nam linijski CSS pomaže. Kao što sam već napomenula, njegov zadatak je da
+        stilizuje našu tabelu. Dakle, navešćemo tagove za stil:
+    </p>
+    <div>
+        <ul style="font-size: 25px;">
+            <li><b>(Table) border</b> - daje vizualnu strukturu tabeli, debljine 1, suštinski je odvaja od pozadine i
+                razgraničava, dajemo joj brojčanu vrijednost (1,2,3..)</li>
+            <li><b>Table background color</b> - ubacujemo ga uz <i>style</i> tag kao kod DIV i SPAN, boju biramo ili
+                riječima ili HEX kodom</li>
+            <li><b>th</b> tag - th je skraćeno za table header, daje naslov redu/koloni, zavisi gdje unosimo</li>
+            <li><b>border collapse</b>-daje efekat spojenih ivica ćelija; nije nužno samo je estetski dodatak</li>
+        </ul>
+    </div>
+    <p style="text-align: left; font-size: 30px; font-family:'Trebuchet MS'">
+        *Naravno radi lakšeg shvatanja, vidjećemo kako to sve u praksi izgleda <i>(čitajte kao:"ovako tabela sa svim tim
+            treba da izgleda")</i>
+    </p>
+    <table border="3" ; width="500" height="600"
+        style="background-color: rgb(233, 182, 207);border-collapse: collapse;">
+        <tr>
+            <th>Kolona 1</th>
+            <th>Kolona 2</th>
+            <th>Kolona 3</th>
+        </tr>
+        <tr>
+            <td>Red 1, Celija 1</td>
+            <td>Red 1, Celija 2</td>
+            <td>Red 1, Celija 3</td>
+        </tr>
+        <tr>
+            <td>Red 2, Celija 1</td>
+            <td>Red 2, Celija 2</td>
+            <td>Red 2, Celija 3</td>
+        </tr>
+        <tr>
+            <td>Red 3, Celija 1</td>
+            <td>Red 3, Celija 2</td>
+            <td>Red 3, Celija 3</td>
+        </tr>
+    </table>
+    <p style="text-align: left; font-size: 30px; font-family:'Trebuchet MS'"> * A ovako to izgleda u našem kodu:</p>
+    <img src="hemijaa.png">
+</body>
+
+</html>
